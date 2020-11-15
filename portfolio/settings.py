@@ -9,8 +9,8 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
-from .sec import DEBUG, SECRET_KEY, DATABASES
+import os
+from .sec import DEBUG, SECRET_KEY, DATABASES, BASE_DIR
 '''
 import environ
 env = environ.Env(
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "portfolio/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
