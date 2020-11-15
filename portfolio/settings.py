@@ -32,7 +32,7 @@ SECRET_KEY
 DEBUG 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
