@@ -2,30 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Hello!</title>
 
 <style>
     body {
         background-color: rgb(53, 37, 36);
     }
-
-    h1{
-        position: center;
-        color: white;
+    
+    
+    #box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
     }
-    div {
-        position: center;
-        left: 50%;
-        top: 50%;
+
+    #box1{
+        display: flex;
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #box1 > *{
+        width: 200px;
+        height: 200px;
+    }
+
+
+    #box2{
+        display: flex;
+        color: white;
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;  
     }
     
 </style>
 </head>
 <body>
-    <h1>Website under construction...</h1>
-    <div>
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ddd62f106821683.5f98b0ad83d13.gif" alt="baby-yoda">
+   
+    <div id="box">
+        <div id="box1">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ddd62f106821683.5f98b0ad83d13.gif" alt="baby-yoda">
+        </div>
+        <div id="box2">
+            <h1>Website under construction...</h1>
+        </div>
+        
     </div>
 </body>
 </html>
